@@ -1,0 +1,221 @@
+
+html, body, #map {
+	height:100% !important;
+	width:100% !important;
+	margin:0;
+	padding:0;
+}
+body {
+	background-color:#FFF;
+	overflow:hidden;
+	font-family:"Trebuchet MS";
+	
+}
+/*#ua-web-branding-banner-v1{
+	width:100%;
+	height:2.3em;
+	float:right;
+	top:0px;
+	position:fixed;
+}
+#ua-web-branding-banner-v1 .ua-home.asdf {
+	margin-left:none;
+	position: fixed;
+	float: left;
+	left: 2px;
+}*/
+#header{
+	float:left;
+	width: 100%;
+	height: 1.8em;
+	position: fixed;
+	top:0px;
+	background-color: rgb(34, 51, 31);
+	z-index: 1;
+}
+#headerName{
+	color: red;
+	font-family: Calibri;
+	font-size: 1.3em;
+	padding-left: .2em;
+}
+#search{
+	float: right;
+	position: fixed;
+	top: 1.8em;
+	right: 0.5em;
+}
+#searchBox{
+	font-family: Calibri;
+	font-size: 0.9em;
+}
+div.ui-input-text {
+	border: .1em solid red;
+
+}
+.ui-body-c, .ui-overlay-c {
+	text-shadow:none;
+}
+.ui-autocomplete .ui-menu-item
+{ 
+	font-size:.7em;
+	font-family: Calibri;
+}
+#popupCloseRight{
+	padding: .2em;
+	font-family: Calibri;
+	font-size: .9em;
+}
+#popup-header{
+	margin: 0em;
+	font-size: 1.2em;
+}
+#popup-para{
+	margin: 0.5em;
+	margin-left: 0em;
+}
+#popup-image{
+	width: 20em;
+	height: 20em;
+}
+
+
+#mainPage[data-role="page"]{
+	padding: 0 !important;
+	width: 100%;
+	height: 100%;
+}
+
+
+#basemap{
+	border: 0.15em solid red;
+	cursor:pointer;
+	float: left;
+	position: fixed;
+	bottom: 1em;
+	left: 0.5em;
+	height: 3em;
+	width: 3em;
+	/*background-color: rgb(168, 177, 105);*/
+	z-index: 11;
+	background-image:url("http://www.arcgis.com/sharing/rest/content/items/86de95d4e0244cba80f0fa2c9403a7b2/info/thumbnail/tempimagery.jpg");
+}
+
+#link{
+	float:left;
+	position:absolute;
+	bottom:.5em;
+	left:0em;
+}
+
+.esriSimpleSliderTL {
+	top: 3em;
+	left: 0.8em;
+}
+
+
+/*Media queries to resize the position of elements for smaller screen sizes*/
+
+@media all and (max-width: 300px) and (min-width: 250px){
+	
+	#header{
+		height: 1.5em;
+	}
+	#headerName{
+		font-size: 1em;
+	}
+	#search{
+		width: 8em;
+	}
+	#popup-image{
+		width: 15em;
+		height: 15em;
+	}
+
+}
+
+@media all and (max-width: 249px) and (min-width: 200px){
+	
+	#header{
+		height: 1.3em;
+	}
+	#headerName{
+		font-size: .8em;
+		
+	}
+	#search{
+		width: 8em;
+	}
+	#popup-image{
+		width: 15em;
+		height: 15em;
+	}
+
+}
+
+@media all and (max-width: 199px) and (min-width: 0px){
+	
+	#header{
+		height: 1.6em;
+	}
+	#headerName{
+		font-size: .6em;
+		
+	}
+	#search{
+		width: 8em;
+		top: 3em;
+	}
+	#popup-image{
+		width: 15em;
+		height: 15em;
+	}
+
+}
+
+@media all and (max-height: 330px) and (min-height: 0px){
+	#basemap{
+		width: 2em;
+		height: 2em;
+		border: 0.05em solid red;
+	}
+	#popup-image{
+		width: 15em;
+		height: 15em;
+	}
+	
+
+}
+
+@media all and (max-height: 480px) and (min-height: 0px){
+	#popupCloseRight{
+		height: 15em;
+		width: 13em;
+	}
+	#popup-image{
+		width: 8em;
+		height: 8em;
+	}
+
+	
+
+}
+
+@media all and (max-width: 350px) and (min-width: 0px){
+	#popupCloseRight{
+		height: 15em;
+		width: 13em;
+	}
+	#popup-image{
+		width: 8em;
+		height: 8em;
+	}
+}
+
+
+
+/*End of media query*/
+
+
+
+
